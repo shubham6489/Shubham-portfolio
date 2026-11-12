@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shubham Kumar | Creative Technologist & Digital Architect</title>
+  <meta name="description" content="Cinematic portfolio of Shubham Kumar - Turning Ideas Into Digital Experiences with Creative Design and AI." />
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@500;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Cinematic Preloader -->
+  <div id="preloader" class="preloader">
+    <div class="loader-content">
+      <div class="loader-logo">SK<span>.</span></div>
+      <div class="loader-bar-wrap">
+        <div class="loader-bar" id="loaderBar"></div>
+      </div>
+      <div class="loader-status">
+        <span class="status-text">INITIALIZING QUANTUM CORE</span>
+        <span class="status-num" id="loaderCounter">00%</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Custom Cursor & Swarm Particles -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+  <div id="cursorSwarm"></div>
+
+  <!-- Audio Atmosphere / Ambient Grid Background -->
+  <div class="bg-vignette"></div>
+  <div class="cyber-grid"></div>
+
+  <!-- Navigation Header -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-brand">
+        <span class="brand-text">SHUBHAM</span>
+        <span class="brand-dot"></span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#about" class="nav-link"><span class="nav-idx">01</span>About</a>
+        <a href="#ai-experiments" class="nav-link"><span class="nav-idx">02</span>AI Lab</a>
+        <a href="#services" class="nav-link"><span class="nav-idx">03</span>Services</a>
+        <a href="#portfolio" class="nav-link"><span class="nav-idx">04</span>Works</a>
+        <a href="#contact" class="nav-link cta-link">Initiate Contact</a>
+      </nav>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <canvas id="neuralCanvas" class="hero-canvas"></canvas>
+      <div class="hero-glow"></div>
+
+      <div class="container hero-content">
+        <div class="hero-badge reveal">
+          <span class="badge-pulse"></span>
+          <span>AVAILABLE FOR 2026/2027 PROJECTS</span>
+        </div>
+
+        <h1 class="hero-name reveal">
+          <span class="outline-text">SHUBHAM</span>
+          <span class="solid-text">KUMAR</span>
+        </h1>
+
+        <div class="hero-statement reveal">
+          <p class="hero-subtext">Turning Ideas Into Digital Experiences.</p>
+          <p class="hero-desc">
+            Bridging hyper-modern website design, machine intelligence, and high-impact visual storytelling into transcendent interactive realities.
+          </p>
+        </div>
+
+        <div class="hero-actions reveal">
+          <a href="#portfolio" class="btn btn-primary">
+            <span>Explore My Work</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            <span>Contact Me</span>
+          </a>
+        </div>
+
+        <div class="hero-metrics reveal">
+          <div class="metric-item">
+            <span class="metric-val">99.8%</span>
+            <span class="metric-label">Precision Code</span>
+          </div>
+          <div class="metric-divider"></div>
+          <div class="metric-item">
+            <span class="metric-val">30+</span>
+            <span class="metric-label">Creations Deployed</span>
+          </div>
+          <div class="metric-divider"></div>
+          <div class="metric-item">
+            <span class="metric-val">4.9/5</span>
+            <span class="metric-label">Client Satisfaction</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-down-indicator">
+        <span class="mouse-icon">
+          <span class="mouse-wheel"></span>
+        </span>
+        <span class="scroll-label">SCROLL TO DISCOVER</span>
+      </div>
+    </section>
+
+    <!-- 2. ABOUT ME SECTION -->
+    <section class="about-section section-padding" id="about">
+      <div class="container">
+        <div class="section-tag reveal">
+          <span class="tag-line"></span>
+          <span>// 01 ARCHITECTURE & PHILOSOPHY</span>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-profile-card reveal">
+            <div class="card-glass-frame">
+              <div class="profile-avatar">
+                <div class="avatar-ring"></div>
+                <div class="avatar-inner">
+                  <span class="avatar-monogram">SK</span>
+                </div>
+              </div>
+
+              <div class="profile-details">
+                <h3 class="profile-title">Shubham Kumar</h3>
+                <span class="profile-role">youtube thamnaile deginer </span>
+                <p class="profile-location">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+                 Bihar Bhagalpur 
+                </p>
+              </div>
+
+              <div class="profile-tags">
+                <span class="hud-pill">Frontend Architect</span>
+                <span class="hud-pill">Generative AI</span>
+                <span class="hud-pill">WebGL / ThreeJS</span>
+                <span class="hud-pill">Interaction UX</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-narrative reveal">
+            <h2 class="section-title">
+              Crafting <span class="accent-text">the bleeding edge</span> of web interfaces.
+            </h2>
+            <p class="text-block">
+              I am Shubham Kumar, a creative digital enthusiast focused on pushing browser limitations. By marrying artistic cinematography with robust programming, I transform ambitious visions into memorable digital flagships.
+            </p>
+            <p class="text-block secondary-text">
+              My engineering philosophy revolves around three cornerstones: uncompromising aesthetics, hyper-fast performance, and deep emotional resonance. Whether engineering multi-layered AI architectures or high-touch micro-interactions, every pixel serves a purposeful narrative.
+            </p>
+
+            <div class="about-specs-grid">
+              <div class="spec-card">
+                <span class="spec-num">01</span>
+                <h4>Algorithmic Design</h4>
+                <p>Generating adaptive visual systems driven by mathematical balance.</p>
+              </div>
+              <div class="spec-card">
+                <span class="spec-num">02</span>
+                <h4>Cinematic Motion</h4>
+                <p>Fluid 60FPS choreographies with GPU-accelerated rendering.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. AI EXPERIMENTS SECTION -->
+    <section class="ai-section section-padding" id="ai-experiments">
+      <div class="container">
+        <div class="section-tag reveal">
+          <span class="tag-line"></span>
+          <span>// 02 EXPERIMENTAL LAB</span>
+        </div>
+
+        <div class="section-header-flex reveal">
+          <h2 class="section-title">
+            AI-Driven <span class="accent-text">Synthetics</span> & Prototyping
+          </h2>
+          <p class="section-summary">
+            Explorations at the frontier of machine learning, procedural generation, and autonomous user interaction engines.
+          </p>
+        </div>
+
+        <div class="ai-cards-grid">
+          <div class="ai-card reveal" data-tilt>
+            <div class="ai-card-glow"></div>
+            <div class="ai-card-content">
+              <div class="ai-top">
+                <span class="model-badge">LLM / VEC-01</span>
+                <div class="status-indicator live"></div>
+              </div>
+              <h3 class="ai-title">Autonomous Mindspace</h3>
+              <p class="ai-desc">
+                An adaptive contextual prompt generator synthesizing multidimensional user sentiment into real-time visual canvases.
+              </p>
+              <div class="ai-tech-stack">
+                <span>Transformers</span>
+                <span>Vector Embeddings</span>
+                <span>Canvas API</span>
+              </div>
+              <div class="ai-card-action">
+                <a href="#contact" class="card-link">Request Demo <span>&rarr;</span></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="ai-card reveal" data-tilt>
+            <div class="ai-card-glow"></div>
+            <div class="ai-card-content">
+              <div class="ai-top">
+                <span class="model-badge">DIFFUSION LAB</span>
+                <div class="status-indicator live"></div>
+              </div>
+              <h3 class="ai-title">NeuroChroma Engine</h3>
+              <p class="ai-desc">
+                Experimental visual synthesizer that outputs cinematic hyper-stylized assets conditioned on procedural prompt weighting.
+              </p>
+              <div class="ai-tech-stack">
+                <span>Latent Diffusion</span>
+                <span>Node.js</span>
+                <span>WebGL</span>
+              </div>
+              <div class="ai-card-action">
+                <a href="#contact" class="card-link">Request Demo <span>&rarr;</span></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="ai-card reveal" data-tilt>
+            <div class="ai-card-glow"></div>
+            <div class="ai-card-content">
+              <div class="ai-top">
+                <span class="model-badge">AUDIO SENSE</span>
+                <div class="status-indicator standby"></div>
+              </div>
+              <h3 class="ai-title">SonikPulse AI</h3>
+              <p class="ai-desc">
+                Generates responsive spatial ambient audio based on visitor scroll velocity, click velocity, and page engagement times.
+              </p>
+              <div class="ai-tech-stack">
+                <span>Web Audio API</span>
+                <span>TensorFlow.js</span>
+                <span>ToneJS</span>
+              </div>
+              <div class="ai-card-action">
+                <a href="#contact" class="card-link">Request Demo <span>&rarr;</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. SERVICES SECTION -->
+    <section class="services-section section-padding" id="services">
+      <div class="container">
+        <div class="section-tag reveal">
+          <span class="tag-line"></span>
+          <span>// 03 CAPABILITIES</span>
+        </div>
+
+        <h2 class="section-title reveal">
+          Engineered for <span class="accent-text">Impact</span>
+        </h2>
+
+        <div class="services-list">
+          <div class="service-item reveal">
+            <span class="service-index">01</span>
+            <div class="service-info">
+              <h3 class="service-name">Website Design</h3>
+              <p class="service-description">
+                Tailor-made, brand-defining UI/UX with cinematic presentation, custom micro-interactions, and responsive layouts that convert visitors into loyal audiences.
+              </p>
+              <ul class="service-features">
+                <li>Design Systems & Prototypes</li>
+                <li>Performance Optimization</li>
+                <li>Ultra Responsive Layouts</li>
+              </ul>
+            </div>
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+          </div>
+
+          <div class="service-item reveal">
+            <span class="service-index">02</span>
+            <div class="service-info">
+              <h3 class="service-name">AI Experiments & Integration</h3>
+              <p class="service-description">
+                Seamless implementation of generative AI systems, smart chatbots, custom embeddings, and dynamic content synthesis directly inside modern web applications.
+              </p>
+              <ul class="service-features">
+                <li>Custom Assistant Architectures</li>
+                <li>Generative Visual Pipelines</li>
+                <li>Intelligent Automation</li>
+              </ul>
+            </div>
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 11-2.83-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 112.83-2.83l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 112.83 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+            </div>
+          </div>
+
+          <div class="service-item reveal">
+            <span class="service-index">03</span>
+            <div class="service-info">
+              <h3 class="service-name">Creative Digital Solutions</h3>
+              <p class="service-description">
+                Comprehensive end-to-end digital solutions including WebGL motion, brand evolution, landing pages with high conversion, and custom software tailored to visionary goals.
+              </p>
+              <ul class="service-features">
+                <li>Interactive 3D Experiences</li>
+                <li>Digital Strategy & Identity</li>
+                <li>SEO & Hyper-Performance</li>
+              </ul>
+            </div>
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. PORTFOLIO SECTION -->
+    <section class="portfolio-section section-padding" id="portfolio">
+      <div class="container">
+        <div class="section-tag reveal">
+          <span class="tag-line"></span>
+          <span>// 04 ARCHIVE OF WORK</span>
+        </div>
+
+        <div class="portfolio-header reveal">
+          <h2 class="section-title">
+            Featured <span class="accent-text">Deployments</span>
+          </h2>
+
+          <div class="portfolio-filters" id="portfolioFilters">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="web">Web Architecture</button>
+            <button class="filter-btn" data-filter="ai">AI Solutions</button>
+            <button class="filter-btn" data-filter="creative">Creative UI</button>
+          </div>
+        </div>
+
+        <div class="portfolio-grid" id="portfolioGrid">
+          <!-- Project 1 -->
+          <article class="portfolio-card reveal" data-category="web">
+            <div class="project-media">
+              <div class="project-hud-overlay">
+                <span class="hud-code">SYS-01 // PRODUCTION</span>
+                <span class="hud-arrow">&nearr;</span>
+              </div>
+              <div class="project-visual project-bg-1"></div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="project-cat">Web Architecture</span>
+                <span class="project-year">2026</span>
+              </div>
+              <h3 class="project-title">Vortex Vanguard</h3>
+              <p class="project-snippet">Next-generation FinTech portal equipped with dark-glass telemetry and instant transactions.</p>
+              <a href="#contact" class="project-action">Launch Case Study</a>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="portfolio-card reveal" data-category="ai">
+            <div class="project-media">
+              <div class="project-hud-overlay">
+                <span class="hud-code">SYS-02 // NEURAL</span>
+                <span class="hud-arrow">&nearr;</span>
+              </div>
+              <div class="project-visual project-bg-2"></div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="project-cat">AI Solutions</span>
+                <span class="project-year">2026</span>
+              </div>
+              <h3 class="project-title">Aether Mind Neural</h3>
+              <p class="project-snippet">Self-learning knowledge graph analyzing complex datasets with real-time graph visualization.</p>
+              <a href="#contact" class="project-action">Launch Case Study</a>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="portfolio-card reveal" data-category="creative">
+            <div class="project-media">
+              <div class="project-hud-overlay">
+                <span class="hud-code">SYS-03 // AUDIOVISUAL</span>
+                <span class="hud-arrow">&nearr;</span>
+              </div>
+              <div class="project-visual project-bg-3"></div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="project-cat">Creative UI</span>
+                <span class="project-year">2025</span>
+              </div>
+              <h3 class="project-title">Chronos Cybernetics</h3>
+              <p class="project-snippet">Interactive 3D storytelling site for an avant-garde horology manufacturer with spatial audio.</p>
+              <a href="#contact" class="project-action">Launch Case Study</a>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="portfolio-card reveal" data-category="ai">
+            <div class="project-media">
+              <div class="project-hud-overlay">
+                <span class="hud-code">SYS-04 // AUTOMATION</span>
+                <span class="hud-arrow">&nearr;</span>
+              </div>
+              <div class="project-visual project-bg-4"></div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="project-cat">AI Solutions</span>
+                <span class="project-year">2025</span>
+              </div>
+              <h3 class="project-title">Nexus Synthetics</h3>
+              <p class="project-snippet">Autonomous AI marketing copy generator delivering targeted omnichannel campaigns.</p>
+              <a href="#contact" class="project-action">Launch Case Study</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. CONTACT SECTION -->
+    <section class="contact-section section-padding" id="contact">
+      <div class="container">
+        <div class="section-tag reveal">
+          <span class="tag-line"></span>
+          <span>// 05 SECURE COMMS</span>
+        </div>
+
+        <div class="contact-wrapper">
+          <div class="contact-pitch reveal">
+            <h2 class="section-title">
+              Let's create something <span class="accent-text">iconic</span>.
+            </h2>
+            <p class="text-block">
+              Whether you require a cinematic digital presence, next-generation AI integrations, or bespoke design systems—my inbox is primed for collaboration.
+            </p>
+
+            <div class="contact-quick-info">
+              <div class="comms-block">
+                <span class="comms-label">DIRECT EMAIL</span>
+                <a href="mailto:contact@shubhamkumar.dev" class="comms-value">contact@shubhamkumar.dev</a>
+              </div>
+              <div class="comms-block">
+                <span class="comms-label">LOCATION COORDINATES</span>
+                <span class="comms-value">New Delhi, India (IST / UTC+5:30)</span>
+              </div>
+            </div>
+
+            <div class="social-links-area">
+              <span class="socials-label">NETWORK NODES:</span>
+              <div class="social-tags">
+                <a href="https://github.com" target="_blank" rel="noopener" class="social-btn">GitHub</a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-btn">LinkedIn</a>
+                <a href="https://x.com" target="_blank" rel="noopener" class="social-btn">X / Twitter</a>
+                <a href="https://instagram.com" target="_blank" rel="noopener" class="social-btn">Instagram</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-terminal reveal">
+            <form id="contactForm" class="cyber-form" novalidate>
+              <div class="form-group">
+                <label for="name" class="form-label">IDENTITY / NAME</label>
+                <div class="input-glow-wrapper">
+                  <input type="text" id="name" name="name" class="form-input" placeholder="e.g. Elena Rostova" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">TRANSMISSION ADDRESS / EMAIL</label>
+                <div class="input-glow-wrapper">
+                  <input type="email" id="email" name="email" class="form-input" placeholder="e.g. elena@domain.com" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="serviceInterest" class="form-label">DIRECTIVE / SERVICE</label>
+                <div class="input-glow-wrapper">
+                  <select id="serviceInterest" name="service" class="form-input">
+                    <option value="Website Design">Website Design & Development</option>
+                    <option value="AI Experiments">AI Integration & Neural Models</option>
+                    <option value="Creative Digital Solutions">Creative Digital Solutions</option>
+                    <option value="Full Retainer">Other Exploratory Venture</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">TRANSMISSION DATA / MESSAGE</label>
+                <div class="input-glow-wrapper">
+                  <textarea id="message" name="message" rows="4" class="form-input textarea" placeholder="Briefly describe your vision, scope, and timeline..." required></textarea>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary submit-btn" id="submitBtn">
+                <span class="btn-text">Transmit Signal</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+              </button>
+
+              <div class="form-feedback" id="formFeedback"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <span class="footer-logo">SHUBHAM KUMAR</span>
+        <span class="footer-copy">&copy; <span id="yearSpan"></span>. Designed & Engineered with absolute focus.</span>
+      </div>
+      <a href="#hero" class="back-to-top" id="backToTop">
+        <span>TOP</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
